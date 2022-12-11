@@ -67,7 +67,7 @@ systemctl status ssh.service
 ```bash
 ssh-keygen -t rsa -b 4096
 ls -lh .ssh/     // endroit où sont stockés les clés
-mkdir .ssh/authorized_keys   // pour mettre les clés publiques
+touch .ssh/authorized_keys   // pour mettre les clés publiques
 cat .ssh/id_rsa.pub >> .ssh/authorized_keys   // rangement
 chmod 700 .ssh/
 chmod 600 .ssh/authorized_keys
